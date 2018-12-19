@@ -12,7 +12,7 @@
           >
         </a>
         <ul>
-          <li><a class="p-2 text-dark" href="#">تواصل معنا</a></li>
+          <li><a class="p-2" href="#">تواصل معنا</a></li>
           <li>
             <a class="btn btn-outline-primary" href="#">
               الملف التعريفي
@@ -48,9 +48,11 @@ nav {
       list-style: none;
       margin-right: 36px;
       a {
+        color: white;
         font-size: 14px;
         &:hover {
           text-decoration: none;
+          color: white;
         }
         &.btn {
           width: 145px;
