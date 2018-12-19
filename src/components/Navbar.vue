@@ -3,13 +3,27 @@
     <div class="d-flex flex-column flex-md-row align-items-center mb-3 ">
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="navbar-brand my-0 mr-md-auto font-weight-normal" href="#">
-          <img src="@/assets/images/home/png-icons/seen-logo@3x.png"
-          class="d-inline-block align-top"
-          alt="Sceen Logo">
+          <img
+            src="@/assets/images/home/png-icons/seen-logo.png"
+            srcset="@/assets/images/home/png-icons/seen-logo@2x.png 2x,
+            @/assets/images/home/png-icons/seen-logo@3x.png 3x"
+            class="d-inline-block align-top"
+            alt="Sceen Logo"
+          >
         </a>
         <ul>
           <li><a class="p-2 text-dark" href="#">تواصل معنا</a></li>
-          <li><a class="btn btn-outline-primary" href="#">الملف التعريفي <img src="@/assets/images/home/svg-icons/cloud-storage-download.svg" alt="sceen-cloud-storage-dodwnload" /></a></li>
+          <li>
+            <a class="btn btn-outline-primary" href="#">
+              الملف التعريفي
+              <img
+                  src="@/assets/images/home/png-icons/cloud-storage-download.png"
+                  srcset="@/assets/images/home/png-icons/cloud-storage-download@2x.png 2x,
+                  @/assets/images/home/png-icons/cloud-storage-download@3x.png 3x"
+                  alt="sceen-cloud-storage-dodwnload"
+              />
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
