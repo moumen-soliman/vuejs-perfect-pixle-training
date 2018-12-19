@@ -1,3 +1,4 @@
+@import './assets/style/lib/bootstrap.min.css';
 
 @font-face {
   font-family: 'SSTArabic-Roman';
@@ -8,13 +9,6 @@
   font-family: 'SSTArabic-Bold';
   src: url("./assets/fonts/SST-Arabic-Bold.ttf");
 }
-
-// Override / set color variables
-$white: #fff;
-$gray-dark: #330219;
-$purple: #700240;
-$heavy-purple: #570533;
-$light-green: #1f9eab;
 
 // Don't make badges normal instead of bold
 $badge-font-weight: normal;

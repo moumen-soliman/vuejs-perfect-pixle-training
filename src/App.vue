@@ -10,14 +10,13 @@
 
 <script>
 export default {
-  name: 'App',
+  name: 'App'
 };
 </script>
 
 <style lang="scss">
-//base.scss file contain variables, website skeleton
-@import './assets/style/base.scss';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//base file contain variables, website skeleton
+@import './assets/style/_base.scss';
 
 #app {
   font-family: $font-family;
