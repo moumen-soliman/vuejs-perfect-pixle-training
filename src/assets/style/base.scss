@@ -1,0 +1,23 @@
+
+@font-face {
+  font-family: 'SSTArabic-Roman';
+  src: url("./assets/fonts/SST-Arabic-Roman.ttf");
+}
+
+@font-face {
+  font-family: 'SSTArabic-Bold';
+  src: url("./assets/fonts/SST-Arabic-Bold.ttf");
+}
+
+// Override / set color variables
+$white: #fff;
+$gray-dark: #330219;
+$purple: #700240;
+$heavy-purple: #570533;
+$light-green: #1f9eab;
+
+// Don't make badges normal instead of bold
+$badge-font-weight: normal;
+
+// Override fonts
+$font-family: 'SSTArabic-Roman';
