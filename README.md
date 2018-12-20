@@ -1,6 +1,6 @@
-# sceen
+# VueJS cards
 
-> Sceen - Perfect Pixels project, build by Vuejs
+> Cards - Perfect Pixels project, build by Vuejs
 
 ## Build Setup
 
