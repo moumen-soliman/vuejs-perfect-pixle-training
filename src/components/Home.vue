@@ -2,33 +2,36 @@
   <header class="blog-header py-3">
     <div class="container">
       <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
+        <div class="col-5 pt-1">
           <div class="text-muted boards">
             <img src="@/assets/icons/svg/rectangle.svg" alt="Nello Boards">
             <span>{{boards}}</span>
           </div>
         </div>
-        <div class="main-logo col-4 text-center">
+        <div class="main-logo col-2 text-center">
           <h4><b>{{logoBrand}}</b></h4>
         </div>
-        <div class="search-part col-4 d-flex justify-content-end align-items-center">
+        <div class="search-part col-5 d-flex justify-content-end align-items-center">
           <a class="text-muted" href="#">
             <div class="input-group">
               <img src="@/assets/icons/svg/shape.svg" alt="Nello Search Icon">
               <input type="text" placeholder="Search …" class="form-control" aria-label="Text input with dropdown button">
             </div>
           </a>
-          <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
-  </div>
-</div>
-
+          <div class="user-part">
+            <button class="btn" type="button" @click="isHidden = !isHidden">
+              <div class="user-part-details">
+                <img src="https://avatars3.githubusercontent.com/u/24474287?s=460&v=4" :alt="`Nello - ${userName} Photo`"/>
+                <span class="welcome-message">Hi</span>, <span class="user-name">{{userName}}</span>
+              </div>
+              <img src="@/assets/icons/svg/path-2.svg" alt="Nello Dropdown menu">
+            </button>
+            <div :class="isHidden ? 'dropdown-menu show' : 'dropdown-menu'">
+              <button class="dropdown-item" type="button">Action</button>
+              <button class="dropdown-item" type="button">Another action</button>
+              <button class="dropdown-item" type="button">Something else here</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,8 +41,10 @@
 <script>
 export default {
   name: 'Home',
+  props: ['userName'],
   data () {
     return {
+      isHidden: false,
       boards: 'Boards',
       logoBrand: 'Nello.',
     }
@@ -82,6 +87,43 @@ header {
         color: #999;
         opacity: 0.5;
         font-weight: 400;
+      }
+      .user-part {
+        display: inline-block;
+        .btn {
+          font-size: 18px;
+          color: black;
+          padding: 0;
+          background: none;
+          img {
+            width: 9px;
+            margin-left: 9px;
+          }
+          .user-part-details {
+            display: inline;
+            .welcome-message {
+              color: #834bc4;
+              font-style: italic;
+              font-weight: bold;
+            }
+            .user-name {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 4em;
+              display: table-cell;
+            }
+            img {
+              width: 38px;
+              height: 38px;
+              border-radius: 10px;
+              margin-right: 2px;
+            }
+          }
+        }
+        .dropdown-menu {
+          left: unset;
+        }
       }
     }
   }
