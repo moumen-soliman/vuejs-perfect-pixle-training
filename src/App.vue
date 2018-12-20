@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <div class="main-container">
-      <router-view/>
-    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App'
-};
+}
 </script>
 
 <style lang="scss">
-//base file contain variables, website skeleton
-@import './assets/style/_base.scss';
-
-#app {
-  font-family: $font-family;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+body {
+  background: #f5f7fa;
+  #app {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
 }
 </style>
