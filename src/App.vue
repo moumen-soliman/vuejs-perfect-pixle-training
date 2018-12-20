@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view :userName="userName"/>
+    <router-view :userInfo="userInfo"/>
   </div>
 </template>
 
@@ -9,7 +9,11 @@ export default {
   name: 'App',
   data() {
     return {
-      userName: 'Khalid'
+      userInfo: {
+        name: 'Khalid',
+        team: 'Nasaq',
+        board: 'UI/UX'
+      }
     }
   }
 }
