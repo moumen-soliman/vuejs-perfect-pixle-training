@@ -33,6 +33,8 @@ body {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    overflow-y: hidden;
+    box-sizing: border-box;
   }
 }
 </style>
