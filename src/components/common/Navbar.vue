@@ -2,7 +2,7 @@
   <header class="py-3">
     <div class="container">
       <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-5 pt-1">
+        <div class="col-5">
           <div class="text-muted boards">
             <img src="@/assets/icons/svg/rectangle.svg" alt="Nello Boards">
             <span>{{boards}}</span>
@@ -12,7 +12,7 @@
           <h4><b>{{logoBrand}}</b></h4>
         </div>
         <div class="search-part col-5 d-flex justify-content-end align-items-center">
-          <a class="text-muted" href="#">
+          <a class="text-muted hide-sm" href="#">
             <div class="input-group">
               <img src="@/assets/icons/svg/shape.svg" alt="Nello Search Icon">
               <input type="text" placeholder="Search …" class="form-control" aria-label="Text input with dropdown button">
@@ -21,8 +21,8 @@
           <div class="user-part">
             <button class="btn" type="button" @click="isHidden = !isHidden">
               <div class="user-part-details">
-                <img src="https://avatars3.githubusercontent.com/u/24474287?s=460&v=4" :alt="`Nello - ${userInfo.name} Photo`"/>
-                <span class="welcome-message">Hi</span>, <span class="user-name">{{userInfo.name}}</span>
+                <img src="@/assets/icons/jpg/test.jpg" class="hide-sm" :alt="`Nello - ${userInfo.name} Photo`"/>
+                <span class="welcome-message hide-sm">Hi,</span> <span class="user-name">{{userInfo.name}}</span>
               </div>
               <img src="@/assets/icons/svg/path-2.svg" alt="Nello Dropdown menu">
             </button>
@@ -126,6 +126,16 @@ header {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 992px) {
+  .hide-sm {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main-logo {
+      margin-left: -20px;
   }
 }
 </style>
