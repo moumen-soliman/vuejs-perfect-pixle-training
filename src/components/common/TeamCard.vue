@@ -64,6 +64,7 @@ export default {
         div:first-child {
           span {
             font-size: 21px;
+            text-transform: capitalize;
           }
         }
 
@@ -87,10 +88,10 @@ export default {
         padding: 6px;
         margin-right: 12px;
         float: left;
-
         span {
           margin: auto;
           font-size: 24px;
+          text-transform: uppercase;
         }
       }
     }
